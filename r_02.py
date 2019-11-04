@@ -1,12 +1,12 @@
 '''
-найти минимальный элемент списка
+развернуть строку
 '''
 
-def get(lst):
-	if len(lst) == 1:
-		return lst[0]
+def get(s):
+	if s == '':
+		return ''
 	else:
-		return lst[0] if lst[0] < get(lst[1:]) else get(lst[1:])
+		return get(s[1:]) + s[0]
 
-lst = [8,4,6,5,7,9]
-print(get(lst))
+s = 'строка'
+print(get(s))
