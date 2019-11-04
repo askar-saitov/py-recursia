@@ -1,5 +1,5 @@
 '''
-найти сумму чисел от 1 до n
+найти сумму чисел от 0 до n
 '''
 
 def get(n):
@@ -7,5 +7,5 @@ def get(n):
 		return 0
 	else:
 		return get(n - 1) + n
-		
+
 print(get(10))
