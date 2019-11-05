@@ -8,6 +8,7 @@ def get(s):
 		return True
 	else:
 		return (s[0]==s[-1]) and get(s[1:-1])
+		# return get(s[1:-1]) and (s[0]==s[-1]) # так дольше
 
-s = 'радар'
+s = '_адар'
 print('Палиндром' if get(s) else 'Не палиндром')

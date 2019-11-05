@@ -8,9 +8,10 @@ def get(s):
 	else:
 		return get(s[1:]) + int(s[0])*2**(len(s)-1)
 
+# 1110
 x = 14 # это для проверки
 b = bin(x)
-print(b)
+print(b) # для контроля
 s = b[2:]
 print(s) # вот это число мы переводим
 print(get(s))
