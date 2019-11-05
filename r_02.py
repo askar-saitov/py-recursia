@@ -8,5 +8,7 @@ def get(s):
 	else:
 		return get(s[1:]) + s[0]
 
+
 s = 'строка'
+print(s[::-1]) # для контроля
 print(get(s))

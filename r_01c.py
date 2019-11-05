@@ -4,8 +4,8 @@
 '''
 
 def get(n,m):
-	if m == 1:
-		return n
+	if m == 0:
+		return 1
 	elif m%2 == 0:
 		r = get(n, m//2)
 		return r * r
@@ -13,4 +13,6 @@ def get(n,m):
 		r = get(n, m//2)
 		return r * r * n
 
-print(get(2,5))
+# 2**4 = 2**2 * 2**2
+# 2**5 = 2**4 * 2 = 2**2 * 2**2 * 2
+print(get(2,10))
