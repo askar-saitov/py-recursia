@@ -8,4 +8,4 @@ def get(n):
 	else:
 		return get(n - 1) + n
 
-print(get(10))
+print(get(5))
